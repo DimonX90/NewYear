@@ -153,10 +153,10 @@ input:focus:-ms-input-placeholder {
     transform: scale(1);
   }
   25% {
-    transform: scale(0.8);
+    transform: scale(0.7);
   }
   75% {
-    transform: scale(1.2);
+    transform: scale(1.3);
   }
   100% {
     transform: scale(1);
@@ -186,12 +186,10 @@ body {
   z-index: 20;
   position: relative;
   transition: all 2s ease 0s;
-  max-height: 1080px;
+  min-height: 100vh;
   position: relative;
   display: flex;
   margin: auto;
-  padding-top: 70px;
-  padding-bottom: 70px;
   width: 1920px;
   background: url("../img/bg.png") 0 0/100% 100% no-repeat;
 }
@@ -200,21 +198,13 @@ body {
 }
 @media (max-width: 1920px) {
   .wrapper {
-    padding-top: calc(10px + 60 * ((100vw - 320px) / 1600));
-  }
-}
-@media (max-width: 1920px) {
-  .wrapper {
-    padding-bottom: calc(10px + 60 * ((100vw - 320px) / 1600));
-  }
-}
-@media (max-width: 1920px) {
-  .wrapper {
     width: calc(320px + 1600 * ((100vw - 320px) / 1600));
   }
 }
 
 .container {
+  padding-top: 30px;
+  padding-bottom: 30px;
   position: relative;
   width: 100%;
   display: flex;
@@ -223,6 +213,21 @@ body {
   margin: 0 auto;
   padding-left: 158px;
   padding-right: 72px;
+}
+@media (max-width: 1920px) {
+  .container {
+    padding-top: calc(1px + 29 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 1920px) {
+  .container {
+    padding-bottom: calc(1px + 29 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .container {
+    padding-bottom: 20px;
+  }
 }
 @media (max-width: 1920px) {
   .container {
@@ -318,12 +323,18 @@ body {
 }
 @media (max-width: 1920px) {
   .christmasstree {
-    width: calc(280px + 497 * ((100vw - 320px) / 1600));
+    width: calc(162px + 615 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .christmasstree {
-    height: calc(354px + 625 * ((100vw - 320px) / 1600));
+    height: calc(204px + 775 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .christmasstree {
+    width: 300px;
+    height: 421px;
   }
 }
 
@@ -339,12 +350,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift1 {
-    top: calc(50px + 80 * ((100vw - 320px) / 1600));
+    top: calc(22px + 108 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift1 {
-    left: calc(100px + 165 * ((100vw - 320px) / 1600));
+    left: calc(60px + 205 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift1 {
+    top: 52px;
+    left: 110px;
   }
 }
 .gift1 img {
@@ -372,12 +389,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift2 {
-    top: calc(90px + 130 * ((100vw - 320px) / 1600));
+    top: calc(40px + 180 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift2 {
-    left: calc(155px + 285 * ((100vw - 320px) / 1600));
+    left: calc(60px + 380 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift2 {
+    top: 110px;
+    left: 160px;
   }
 }
 .gift2 img {
@@ -405,12 +428,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift3 {
-    top: calc(118px + 202 * ((100vw - 320px) / 1600));
+    top: calc(58px + 262 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift3 {
-    left: calc(108px + 182 * ((100vw - 320px) / 1600));
+    left: calc(8px + 282 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift3 {
+    top: 148px;
+    left: 88px;
   }
 }
 .gift3 img {
@@ -436,12 +465,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift4 {
-    top: calc(155px + 275 * ((100vw - 320px) / 1600));
+    top: calc(90px + 340 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift4 {
-    left: calc(175px + 305 * ((100vw - 320px) / 1600));
+    left: calc(80px + 400 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift4 {
+    top: 210px;
+    left: 190px;
   }
 }
 .gift4 img {
@@ -467,12 +502,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift5 {
-    top: calc(182px + 314 * ((100vw - 320px) / 1600));
+    top: calc(104px + 392 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift5 {
-    left: calc(57px + 93 * ((100vw - 320px) / 1600));
+    left: calc(15px + 135 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift5 {
+    top: 234px;
+    left: 45px;
   }
 }
 .gift5 img {
@@ -498,12 +539,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift6 {
-    top: calc(186px + 329 * ((100vw - 320px) / 1600));
+    top: calc(126px + 389 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift6 {
-    left: calc(130px + 220 * ((100vw - 320px) / 1600));
+    left: calc(55px + 295 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift6 {
+    top: 230px;
+    left: 130px;
   }
 }
 .gift6 img {
@@ -529,12 +576,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift7 {
-    top: calc(230px + 398 * ((100vw - 320px) / 1600));
+    top: calc(130px + 498 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift7 {
-    left: calc(25px + 40 * ((100vw - 320px) / 1600));
+    left: calc(5px + 60 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift7 {
+    top: 280px;
+    left: 25px;
   }
 }
 .gift7 img {
@@ -560,12 +613,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift8 {
-    top: calc(235px + 418 * ((100vw - 320px) / 1600));
+    top: calc(160px + 493 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift8 {
-    left: calc(115px + 202 * ((100vw - 320px) / 1600));
+    left: calc(40px + 277 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift8 {
+    top: 300px;
+    left: 120px;
   }
 }
 .gift8 img {
@@ -591,12 +650,18 @@ body {
 }
 @media (max-width: 1920px) {
   .gift9 {
-    top: calc(258px + 467 * ((100vw - 320px) / 1600));
+    top: calc(152px + 573 * ((100vw - 320px) / 1600));
   }
 }
 @media (max-width: 1920px) {
   .gift9 {
-    left: calc(206px + 331 * ((100vw - 320px) / 1600));
+    left: calc(100px + 437 * ((100vw - 320px) / 1600));
+  }
+}
+@media (max-width: 767.98px) {
+  .gift9 {
+    top: 302px;
+    left: 200px;
   }
 }
 .gift9 img {
@@ -682,12 +747,12 @@ body {
 }
 
 /*================================================*/
-canvas {
-  position: absolute;
+#particles-js {
+  position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
-  -webkit-filter: blur(2px);
-  filter: blur(2px);
+  bottom: 0;
+  right: 0;
+  z-index: 0;
+  overflow: hidden;
 }
